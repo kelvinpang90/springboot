@@ -5,6 +5,9 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
 import java.io.Serializable;
+import java.time.LocalDateTime;
+import java.time.ZoneOffset;
+import java.util.Date;
 
 @Service
 public class RedisService {
@@ -13,5 +16,6 @@ public class RedisService {
 
     public void addUser(String key,String value){
         redisTemplate.opsForValue().set(key,value);
+        redisTemplate.expireAt(key, Date.from(LocalDateTime.of(2019,3,3,11,35).toInstant(ZoneOffset.ofHours(8))));
     }
 }

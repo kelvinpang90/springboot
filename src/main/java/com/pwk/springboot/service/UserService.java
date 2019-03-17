@@ -1,20 +1,20 @@
 package com.pwk.springboot.service;
 
-import com.pwk.springboot.dao.UserDao;
+import com.pwk.springboot.dao.UserMapper;
 import com.pwk.springboot.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
+@Service("userService")
 public class UserService {
     @Autowired
-    private UserDao userDao;
-    public List<User> getAllUsers(){
-        return userDao.getAllUsers();
+    private UserMapper userMapper;
+    public User selectByPrimaryKey(int id){
+        return userMapper.selectByPrimaryKey(id);
     }
     public void addUser(User user){
-        userDao.addUser(user);
+        userMapper.insert(user);
     }
 }
