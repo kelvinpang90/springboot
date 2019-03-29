@@ -5,11 +5,12 @@ import com.pwk.springboot.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 @Service("userService")
 public class UserService {
-    @Autowired
+    @Resource
     private UserMapper userMapper;
     public User selectByPrimaryKey(int id){
         return userMapper.selectByPrimaryKey(id);
