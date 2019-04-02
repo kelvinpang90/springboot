@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns="http://www.reborn.com/schema/first"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://www.reborn.com/schema/first">
+    <xsd:element name="initialize">
+        <xsd:annotation>
+            <xsd:documentation><![CDATA[
+	                For bean initialization
+			]]></xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexType>
+            <xsd:attribute name="id" type="xsd:string" use="required"/>
+            <xsd:attribute name="class" type="xsd:string" use="required"/>
+            <xsd:attribute name="param" type="xsd:string"/>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>
