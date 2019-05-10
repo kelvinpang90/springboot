@@ -9,8 +9,15 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class LogRabbitMQConfig {
-    private final static String QUEUE_ALL_LOG = "log.#";
-    private final static String QUEUE_ERROR_LOG = "log.error";
+    public final static String QUEUE_ALL_LOG = "log.info";
+    public final static String QUEUE_ERROR_LOG = "log.error";
+    public final static String QUEUE_WARN_LOG = "log.warn";
+
+    public final static String EXCHANGE = "log";
+
+    public final static String ROUTING_KEY_ALL = "log.#";
+    public final static String ROUTING_KEY_ERROR = "log.error";
+    public final static String ROUTING_KEY_WARN = "log.warn";
 
     @Bean
     public Queue logError(){
@@ -24,16 +31,16 @@ public class LogRabbitMQConfig {
 
     @Bean
     public TopicExchange exchange(){
-        return new TopicExchange("log");
+        return new TopicExchange(EXCHANGE);
     }
 
     @Bean
     public Binding bindAll(){
-        return BindingBuilder.bind(logAll()).to(exchange()).with(QUEUE_ALL_LOG);
+        return BindingBuilder.bind(logAll()).to(exchange()).with(ROUTING_KEY_ALL);
     }
 
     @Bean
     public Binding bindError(){
-        return BindingBuilder.bind(logError()).to(exchange()).with(QUEUE_ERROR_LOG);
+        return BindingBuilder.bind(logError()).to(exchange()).with(ROUTING_KEY_ERROR);
     }
 }
