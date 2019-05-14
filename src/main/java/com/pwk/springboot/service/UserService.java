@@ -12,9 +12,9 @@ import java.util.List;
 public class UserService {
     @Resource
     private UserMapper userMapper;
-    public User selectByPrimaryKey(int id){
-        return userMapper.selectByPrimaryKey(id);
-    }
+//    public User selectByPrimaryKey(int id){
+//        return userMapper.selectByPrimaryKey(id);
+//    }
     public void addUser(User user){
         userMapper.insert(user);
     }

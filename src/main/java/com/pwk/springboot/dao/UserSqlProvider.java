@@ -23,21 +23,4 @@ public class UserSqlProvider {
         
         return sql.toString();
     }
-
-    public String updateByPrimaryKeySelective(User record) {
-        SQL sql = new SQL();
-        sql.UPDATE("user");
-        
-        if (record.getUsername() != null) {
-            sql.SET("username = #{username,jdbcType=VARCHAR}");
-        }
-        
-        if (record.getPassword() != null) {
-            sql.SET("password = #{password,jdbcType=VARCHAR}");
-        }
-        
-        sql.WHERE("id = #{id,jdbcType=INTEGER}");
-        
-        return sql.toString();
-    }
 }

@@ -3,6 +3,7 @@ package com.pwk.springboot.controller;
 
 import com.pwk.springboot.domain.User;
 import com.pwk.springboot.domain.UserElasticSearch;
+import com.pwk.springboot.rabbitmq.sender.Sender;
 import com.pwk.springboot.redis.RedisService;
 import com.pwk.springboot.repository.UserRepository;
 import com.pwk.springboot.service.UserService;
@@ -26,10 +27,19 @@ public class HelloController {
     @Resource
     private UserRepository userRepository;
 
+    @Resource
+    private Sender sender;
+
     @GetMapping("/hello/{id}")
     public String hello(@PathVariable("id") String id){
-        System.out.println(userService.selectByPrimaryKey(Integer.valueOf(id)));
+//        System.out.println(userService.selectByPrimaryKey(Integer.valueOf(id)));
         return "Hello World";
+    }
+
+    @GetMapping("/rabbitmq/send")
+    public String send(){
+        sender.send();
+        return "rabbitMQ success";
     }
 
     @GetMapping("/addUser")
