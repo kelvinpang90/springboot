@@ -9,15 +9,15 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class LogRabbitMQConfig {
-    public final static String QUEUE_ALL_LOG = "log.info";
-    public final static String QUEUE_ERROR_LOG = "log.error";
-    public final static String QUEUE_WARN_LOG = "log.warn";
+    public final static String QUEUE_ALL_LOG = "queue.log.info";
+    public final static String QUEUE_ERROR_LOG = "queue.log.error";
+    public final static String QUEUE_WARN_LOG = "queue.log.warn";
 
-    public final static String EXCHANGE = "log";
+    public final static String EXCHANGE = "exchange.topic.log";
 
-    public final static String ROUTING_KEY_ALL = "log.#";
-    public final static String ROUTING_KEY_ERROR = "log.error";
-    public final static String ROUTING_KEY_WARN = "log.warn";
+    public final static String ROUTING_KEY_ALL = "routing.log.#";
+    public final static String ROUTING_KEY_ERROR = "routing.log.error";
+    public final static String ROUTING_KEY_WARN = "routing.log.warn";
 
     @Bean
     public Queue logError(){
