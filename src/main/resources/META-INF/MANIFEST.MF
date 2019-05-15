@@ -1,0 +1,65 @@
+Manifest-Version: 1.0
+Class-Path: httpcore-4.4.11.jar netty-buffer-4.1.33.Final.jar HikariCP
+ -3.2.0.jar spring-data-commons-2.1.5.RELEASE.jar hibernate-commons-an
+ notations-5.0.4.Final.jar dom4j-2.1.1.jar log4j-to-slf4j-2.11.2.jar s
+ pring-core-5.1.5.RELEASE.jar byte-buddy-1.9.10.jar spring-data-redis-
+ 2.1.5.RELEASE.jar lucene-core-7.4.0.jar lucene-queries-7.4.0.jar nett
+ y-common-4.1.33.Final.jar lucene-sandbox-7.4.0.jar joda-time-2.10.1.j
+ ar spring-retry-1.2.4.RELEASE.jar httpclient-4.5.7.jar spring-tx-5.1.
+ 5.RELEASE.jar elasticsearch-secure-sm-6.4.3.jar thymeleaf-extras-java
+ 8time-3.0.3.RELEASE.jar micrometer-core-1.1.3.jar spring-boot-starter
+ -data-elasticsearch-2.1.3.RELEASE.jar lang-mustache-client-6.4.3.jar 
+ spring-beans-5.1.5.RELEASE.jar tomcat-embed-el-9.0.16.jar jackson-dat
+ abind-2.9.8.jar spring-data-keyvalue-2.1.5.RELEASE.jar lucene-spatial
+ 3d-7.4.0.jar lettuce-core-5.1.4.RELEASE.jar HdrHistogram-2.1.9.jar sp
+ ring-boot-starter-2.1.3.RELEASE.jar javax.activation-api-1.2.0.jar co
+ mpiler-0.9.3.jar spring-boot-starter-aop-2.1.3.RELEASE.jar javassist-
+ 3.23.1-GA.jar lucene-backward-codecs-7.4.0.jar thymeleaf-spring5-3.0.
+ 11.RELEASE.jar antlr-2.7.7.jar mybatis-spring-boot-autoconfigure-2.0.
+ 0.jar hppc-0.7.1.jar mybatis-spring-2.0.0.jar mybatis-spring-boot-sta
+ rter-2.0.0.jar thymeleaf-3.0.11.RELEASE.jar netty-codec-4.1.33.Final.
+ jar elasticsearch-cli-6.4.3.jar reindex-client-6.4.3.jar lucene-analy
+ zers-common-7.4.0.jar lucene-suggest-7.4.0.jar reactive-streams-1.0.2
+ .jar spring-boot-starter-jdbc-2.1.3.RELEASE.jar spring-context-suppor
+ t-5.1.5.RELEASE.jar jna-4.5.1.jar commons-codec-1.11.jar spring-webmv
+ c-5.1.5.RELEASE.jar jandex-2.0.5.Final.jar spring-jdbc-5.1.5.RELEASE.
+ jar rank-eval-client-6.4.3.jar jackson-core-2.9.8.jar spring-boot-sta
+ rter-tomcat-2.1.3.RELEASE.jar reactor-core-3.2.6.RELEASE.jar parent-j
+ oin-client-6.4.3.jar spring-oxm-5.1.5.RELEASE.jar LatencyUtils-2.0.3.
+ jar spring-boot-starter-web-2.1.3.RELEASE.jar tomcat-embed-websocket-
+ 9.0.16.jar jul-to-slf4j-1.7.25.jar transport-6.4.3.jar jackson-module
+ -parameter-names-2.9.8.jar t-digest-3.2.jar jaxb-api-2.3.1.jar spring
+ -boot-2.1.3.RELEASE.jar slf4j-api-1.7.25.jar spring-expression-5.1.5.
+ RELEASE.jar spring-aspects-5.1.5.RELEASE.jar jopt-simple-5.0.2.jar sp
+ ring-boot-starter-data-redis-2.1.3.RELEASE.jar transport-netty4-clien
+ t-6.4.3.jar lucene-queryparser-7.4.0.jar lucene-memory-7.4.0.jar spri
+ ng-boot-actuator-2.1.3.RELEASE.jar spring-boot-autoconfigure-2.1.3.RE
+ LEASE.jar jackson-datatype-jsr310-2.9.8.jar spring-boot-actuator-auto
+ configure-2.1.3.RELEASE.jar netty-codec-http-4.1.33.Final.jar spring-
+ jcl-5.1.5.RELEASE.jar lucene-join-7.4.0.jar spring-web-5.1.5.RELEASE.
+ jar amqp-client-5.4.3.jar snakeyaml-1.23.jar mysql-connector-java-8.0
+ .15.jar spring-messaging-5.1.5.RELEASE.jar elasticsearch-core-6.4.3.j
+ ar spring-boot-starter-json-2.1.3.RELEASE.jar tomcat-embed-core-9.0.1
+ 6.jar validation-api-2.0.1.Final.jar lucene-grouping-7.4.0.jar spring
+ -boot-starter-logging-2.1.3.RELEASE.jar attoparser-2.0.5.RELEASE.jar 
+ logback-classic-1.2.3.jar lucene-highlighter-7.4.0.jar spring-boot-st
+ arter-amqp-2.1.3.RELEASE.jar jackson-dataformat-cbor-2.9.8.jar spring
+ -data-elasticsearch-3.1.5.RELEASE.jar netty-handler-4.1.33.Final.jar 
+ spring-orm-5.1.5.RELEASE.jar elasticsearch-rest-client-6.4.3.jar spri
+ ng-boot-starter-data-jpa-2.1.3.RELEASE.jar httpasyncclient-4.1.4.jar 
+ javax.transaction-api-1.3.jar javax.persistence-api-2.2.jar netty-res
+ olver-4.1.33.Final.jar lucene-spatial-extras-7.4.0.jar jboss-logging-
+ 3.3.2.Final.jar lucene-spatial-7.4.0.jar spring-boot-starter-actuator
+ -2.1.3.RELEASE.jar javax.annotation-api-1.3.2.jar spring-data-jpa-2.1
+ .5.RELEASE.jar classmate-1.4.0.jar mybatis-3.5.0.jar percolator-clien
+ t-6.4.3.jar jackson-dataformat-yaml-2.9.8.jar aspectjweaver-1.9.2.jar
+  spring-boot-starter-thymeleaf-2.1.3.RELEASE.jar spring-amqp-2.1.4.RE
+ LEASE.jar elasticsearch-x-content-6.4.3.jar jackson-datatype-jdk8-2.9
+ .8.jar spring-context-5.1.5.RELEASE.jar hibernate-validator-6.0.14.Fi
+ nal.jar elasticsearch-6.4.3.jar log4j-api-2.11.2.jar jackson-dataform
+ at-smile-2.9.8.jar hibernate-core-5.3.7.Final.jar spring-rabbit-2.1.4
+ .RELEASE.jar spring-aop-5.1.5.RELEASE.jar lucene-misc-7.4.0.jar jacks
+ on-annotations-2.9.0.jar unbescape-1.1.6.RELEASE.jar httpcore-nio-4.4
+ .11.jar logback-core-1.2.3.jar netty-transport-4.1.33.Final.jar
+Main-Class: com.pwk.springboot.SpringbootApplication
+
