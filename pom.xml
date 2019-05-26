@@ -129,17 +129,58 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
-				<version>2.6</version>
+				<version>3.0.0</version>
 				<configuration>
 					<archive>
 						<manifest>
 							<addClasspath>true</addClasspath>
 							<classpathPrefix>lib/</classpathPrefix>
-							<mainClass>com.pwk.springboot.SpringbootApplication</mainClass>
+							<mainClass>META-INF.maven.com.pwk.springboot.SpringbootApplication</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
 			</plugin>
+			<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-dependency-plugin</artifactId>
+			<version>3.1.1</version>
+			<executions>
+				<execution>
+					<id>copy</id>
+					<phase>package</phase>
+					<configuration>
+						<outputDirectory>
+							${project.build.directory}/lib
+						</outputDirectory>
+					</configuration>
+				</execution>
+			</executions>
+			</plugin>
+<!--			<plugin>-->
+<!--				<artifactId>maven-assembly-plugin</artifactId>-->
+<!--				<configuration>-->
+<!--					<archive>-->
+<!--						<manifest>-->
+<!--							<addClasspath>true</addClasspath>-->
+
+<!--							&lt;!&ndash;下面必须指定好主类 如com.my.Main &ndash;&gt;-->
+<!--							<mainClass>com.pwk.springboot.SpringbootApplication</mainClass>-->
+<!--						</manifest>-->
+<!--					</archive>-->
+<!--					<descriptorRefs>-->
+<!--						<descriptorRef>jar-with-dependencies</descriptorRef>-->
+<!--					</descriptorRefs>-->
+<!--				</configuration>-->
+<!--				<executions>-->
+<!--					<execution>-->
+<!--						<id>make-my-jar-with-dependencies</id>-->
+<!--						<phase>package</phase>-->
+<!--						<goals>-->
+<!--							<goal>single</goal>-->
+<!--						</goals>-->
+<!--					</execution>-->
+<!--				</executions>-->
+<!--			</plugin>-->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
